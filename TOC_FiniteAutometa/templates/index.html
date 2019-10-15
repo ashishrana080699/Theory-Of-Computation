@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+ 
+    #f1{
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+  
+</style>
+
+
+<body>
+
+        <div class="w3-container w3-blue">
+                <center><h2>Finite Automata Program for Pattern Searching</h2></center>   
+              </div> 
+<br><br>
+<div class="w3-container"   id="f1">
+    <form action="/run" method="post">
+        <div class="form-group row">
+        <label  class="col-sm-2 col-form-label">Enter Text</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="text" placeholder="Enter Text" required>
+        </div>
+        </div><br>
+    <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Enter Pattern</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="pattern" placeholder="Enter Pattern" required>
+            </div>
+    </div>
+   
+          <br><br>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary" id="btn">Run App</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000" class="btn btn-primary" role="button">Reset</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<hr/>
+<div class="w3-container w3-teal">
+  <strong><i><center><h2>Output :</h2>
+          Text =  {{ txt_disp }}<br>
+          pattern = {{pat_disp}}</strong><br></i>
+         
+          {% for i in ans %} 
+  
+          <strong><i>Pattern found at index: {{ i }}<br></i></strong> 
+          {% endfor %}
+            
+            </center>
+            <br>
+        </div>
+</body>
+</html>
