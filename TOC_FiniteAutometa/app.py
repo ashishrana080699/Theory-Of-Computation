@@ -22,6 +22,7 @@ def run():
         values = json.load(f)
         txt=values["text"]
         pat=values["pattern"]
+    #you can use this method directly 
     #text_box_value = request.form['text']
     #pattern_box_value = request.form['pattern']
      
