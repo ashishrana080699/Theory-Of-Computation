@@ -9,3 +9,6 @@ Install Flask
 cd Theory-Of-computation
 
 python app.py
+
+### App View
+![](https://github.com/ashishrana080699/Theory-Of-Computation/blob/master/Screenshot.png)
